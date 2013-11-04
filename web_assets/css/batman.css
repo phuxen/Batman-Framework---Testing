@@ -1,1 +1,416 @@
-@import "../fonts/Gandhi/stylesheet.css";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}.noSelect{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.displayNone{display:none!important}.clear{clear:both;float:none}.clear:after{clear:both;content:".";display:block;height:0;visibility:hidden}@font-face{font-family:'Pictos';src:url('../icons/pictos-web.eot');src:local('☺'),url('../icons/pictos-web.woff') format('woff'),url('../icons/pictos-web.ttf') format('truetype'),url('../icons/pictos-web.svg#webfontphKv1xv9') format('svg');font-weight:normal;font-style:normal}.pictos{font-family:"Pictos";font-weight:normal;line-height:0;text-shadow:none}h1,h2,h3,h4,h5{font-weight:normal}h1{color:#f5f5f5;font-family:"GandhiSansBold",Helvetica Bold,Arial,"Lucida Grande",sans-serif;font-size:48px;line-height:1.2;margin-bottom:15px}h1.homeHeader{font-size:3em;text-align:center}h1 em{text-transform:none;color:#f5f5f5}h2{color:#f5f5f5;font-family:"GandhiSansBold",Helvetica Bold,Arial,"Lucida Grande",sans-serif;font-size:36px;line-height:1.2;margin-bottom:15px}h2 em{text-transform:none;color:#f5f5f5}h3{color:#f5f5f5;font-family:"GandhiSansBold",Helvetica Bold,Arial,"Lucida Grande",sans-serif;font-size:30px;line-height:1.2;margin-bottom:5px}h3 em{text-transform:none;color:#f5f5f5}h4{color:#f5f5f5;font-family:"GandhiSansBold",Helvetica Bold,Arial,"Lucida Grande",sans-serif;font-size:22px;line-height:1.2;margin-bottom:10px}h4 em{text-transform:none;color:#f5f5f5}h5{color:#f5f5f5;font-family:"GandhiSansRegular",Helvetica,Arial,"Lucida Grande",sans-serif;font-size:20px;margin-bottom:10px}h5 em{text-transform:none;color:#f5f5f5}p,address{margin-bottom:15px;font-size:1em}em{font-style:italic;font-weight:normal;font-family:Constantia,"Lucida Bright",Lucidabright,"Lucida Serif",Lucida,"DejaVu Serif","Bitstream Vera Serif","Liberation Serif",Georgia,serif}strong{font-weight:normal;font-family:"GandhiSansBold",Helvetica,Arial,"Lucida Grande",sans-serif}a{color:#26c1bd;text-decoration:none;-webkit-transition:.1s linear all;-moz-transition:.1s linear all;-ms-transition:.1s linear all;-o-transition:.1s linear all;transition:.1s linear all}a:hover{color:#1e9693;cursor:pointer}.superscript{vertical-align:super;font-size:70%}.subscript{vertical-align:bottom;font-size:70%}::selection{background:#26c1bd;color:#fff}::-moz-selection{background:#26c1bd;color:#fff}body,html{height:100%}body{color:#f5f5f5;font-size:18px;font-family:"GandhiSansRegular",Helvetica,Arial,"Lucida Grande",sans-serif;font-weight:300;line-height:1.6;background:#f5f5f5}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.wrapper{margin:0 auto;height:inherit}.nav{background:rgba(255,255,255,0.98);position:fixed;height:72px;width:100%;text-align:center;-webkit-box-shadow:0 3px 10px -4px rgba(0,0,0,0.2);box-shadow:0 3px 10px -4px rgba(0,0,0,0.2);padding:16px 0 0}.nav span{color:#3a3a3a;font-size:26px;display:block}.mainContent{width:1024px;padding:72px 0 0;margin:0 auto;background:#fff;height:inherit}.carousel{background:url('http://www.burberryplc.com/file.axd?pointerid=348e8143b09446f08cf894dcd35cd1f1');background-size:cover;height:600px;width:100%}.article{margin:0 auto;padding:30px;background:#5c00a2}.article p{color:#f5f5f5}.article.twitter{background:#00aaef;height:316px;width:25%;float:left;padding:0;text-align:center}.article.twitter a{color:#fff}.article.twitter a:hover{color:#e9e9e9}@media screen and (min-device-width:1240px){.mainContent{width:1240px}}@media screen and (min-device-width:768px) and (max-width:1240px){.mainContent{width:100%}.carousel{height:500px}}@media screen and (max-width:719px){.nav{height:44px}.carousel{height:300px;padding-top:44px}.article.twitter{width:100%;height:160px}}
+@import "../fonts/Gandhi/stylesheet.css";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* -----------------------------------------------------------------------------------------
+
+TYPOGRAPHY
+
+----------------------------------------------------------------------------------------- */
+/*#3a546f;*/
+/*#00142a; 29343f*/
+/* -----------------------------------------------------------------------------------------
+
+Useful classes
+
+----------------------------------------------------------------------------------------- */
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.displayNone {
+  display: none!important;
+}
+.clear {
+  clear: both;
+  float: none;
+}
+.clear:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/* =========================================================================================
+
+TYPOGRAPHY
+
+========================================================================================= */
+@font-face {
+  font-family: 'Pictos';
+  src: url('../icons/pictos-web.eot');
+  src: local('☺'), url('../icons/pictos-web.woff') format('woff'), url('../icons/pictos-web.ttf') format('truetype'), url('../icons/pictos-web.svg#webfontphKv1xv9') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.pictos {
+  font-family: "Pictos";
+  font-weight: normal;
+  line-height: 0;
+  text-shadow: none;
+}
+/* -------------------------------------------------------
+Headers
+------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+h1 {
+  color: #f5f5f5;
+  font-family: "GandhiSansBold", Helvetica Bold, Arial, "Lucida Grande", sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+h1.homeHeader {
+  font-size: 3em;
+  text-align: center;
+}
+h1 em {
+  text-transform: none;
+  color: #f5f5f5;
+}
+h2 {
+  color: #f5f5f5;
+  font-family: "GandhiSansBold", Helvetica Bold, Arial, "Lucida Grande", sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+h2 em {
+  text-transform: none;
+  color: #f5f5f5;
+}
+h3 {
+  color: #f5f5f5;
+  font-family: "GandhiSansBold", Helvetica Bold, Arial, "Lucida Grande", sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+h3 em {
+  text-transform: none;
+  color: #f5f5f5;
+}
+h4 {
+  color: #f5f5f5;
+  font-family: "GandhiSansBold", Helvetica Bold, Arial, "Lucida Grande", sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+h4 em {
+  text-transform: none;
+  color: #f5f5f5;
+}
+h5 {
+  color: #f5f5f5;
+  font-family: "GandhiSansRegular", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+h5 em {
+  text-transform: none;
+  color: #f5f5f5;
+}
+p,
+address {
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+em {
+  font-style: italic;
+  font-weight: normal;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+strong {
+  font-weight: normal;
+  font-family: "GandhiSansBold", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+a {
+  color: #26c1bd;
+  text-decoration: none;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  -ms-transition: 0.1s linear all;
+  -o-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+}
+a:hover {
+  color: #1e9693;
+  cursor: pointer;
+}
+.superscript {
+  vertical-align: super;
+  font-size: 70%;
+}
+.subscript {
+  vertical-align: bottom;
+  font-size: 70%;
+}
+::selection {
+  background: #26c1bd;
+  color: #ffffff;
+}
+::-moz-selection {
+  background: #26c1bd;
+  color: #ffffff;
+}
+/* =========================================================================================
+
+GLOBAL
+
+========================================================================================= */
+body,
+html {
+  height: 100%;
+}
+body {
+  color: #f5f5f5;
+  font-size: 18px;
+  font-family: "GandhiSansRegular", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  background: #f5f5f5;
+}
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+
+}
+.wrapper {
+  margin: 0 auto;
+  height: inherit;
+}
+.nav {
+  background: rgba(255, 255, 255, 0.98);
+  position: fixed;
+  height: 72px;
+  width: 100%;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 10px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px -4px rgba(0, 0, 0, 0.2);
+  padding: 16px 0 0;
+}
+.nav span {
+  color: #3a3a3a;
+  font-size: 26px;
+  display: block;
+}
+.mainContent {
+  width: 1024px;
+  padding: 72px 0 0;
+  margin: 0 auto;
+  background: #fff;
+  height: inherit;
+}
+.carousel {
+  background: url('http://www.burberryplc.com/file.axd?pointerid=348e8143b09446f08cf894dcd35cd1f1');
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+.article {
+  margin: 0 auto;
+  padding: 30px;
+  background: #5c00a2;
+}
+.article p {
+  color: #f5f5f5;
+}
+.article.twitter {
+  background: #00aaef;
+  height: 316px;
+  width: 25%;
+  float: left;
+  padding: 0;
+  text-align: center;
+}
+.article.twitter a {
+  color: #fff;
+}
+.article.twitter a:hover {
+  color: #e9e9e9;
+}
+/* =========================================================================================
+
+TABLET
+
+========================================================================================= */
+@media screen and (min-device-width: 1240px) {
+  .mainContent {
+    width: 1240px;
+  }
+}
+/* =========================================================================================
+
+TABLET
+
+========================================================================================= */
+@media screen and (min-device-width: 768px) and (max-width: 1240px) {
+  .mainContent {
+    width: 100%;
+  }
+  .carousel {
+    height: 500px;
+  }
+}
+/* =========================================================================================
+
+MOBILE
+
+========================================================================================= */
+@media screen and (max-width: 719px) {
+  .nav {
+    height: 44px;
+  }
+  .carousel {
+    height: 300px;
+    padding-top: 44px;
+  }
+  .article.twitter {
+    width: 100%;
+    height: 160px;
+  }
+}
