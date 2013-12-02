@@ -46,7 +46,7 @@ body	{
 }
 	
 	.nav {
-		background: rgba(255,255,255,0.98);
+		background: rgba(255,255,255,0.97);
 		position:fixed;
 		height:@navHeight;
 		width:100%;
@@ -120,7 +120,7 @@ body	{
 				background: url(../img/printemps/grid.png);
 				background-size:auto;
 				background-position: center center;
-				height:300px;
+				height:400px;
 				position: relative;
 				width: 50%;
 				.title {
@@ -152,7 +152,7 @@ body	{
 				background: @kraken;
 				background-size: cover;
 				background-position: center center;
-				height:300px;
+				height:400px;
 				position: relative;
 				width: 50%;
 				.title {
@@ -178,7 +178,71 @@ body	{
 					}
 				}
 			}
-			// end Burberry World
+			// end Kraken
+			
+			&.LTKD {
+				background: @red;
+				background-size: cover;
+				background-position: center center;
+				height:300px;
+				position: relative;
+				width: 60%;
+				.title {
+					position:absolute;
+					bottom: 0;
+					padding: 12px 15px;
+					background: rgba(255,255,255,0.9);
+					width: 100%;
+					h2 {
+						margin: 0;
+					}
+					h3 {
+						margin: 0;
+						color: #5a5a5a;
+						font-family: @bodyFamily;
+						font-size: @bodyFontSize + 2;
+					}
+					h5 {
+						margin: 0;
+						color: #999;
+						font-family: @bodyFamily;
+						font-size:@bodyFontSize + 2;
+					}
+				}
+			}
+			// end LTKD
+			
+			&.boneman {
+				background: @purple;
+				background-size: cover;
+				background-position: center center;
+				height:300px;
+				position: relative;
+				width: 40%;
+				.title {
+					position:absolute;
+					bottom: 0;
+					padding: 12px 15px;
+					background: rgba(255,255,255,0.9);
+					width: 100%;
+					h2 {
+						margin: 0;
+					}
+					h3 {
+						margin: 0;
+						color: #5a5a5a;
+						font-family: @bodyFamily;
+						font-size: @bodyFontSize + 2;
+					}
+					h5 {
+						margin: 0;
+						color: #999;
+						font-family: @bodyFamily;
+						font-size:@bodyFontSize + 2;
+					}
+				}
+			}
+			// end Boneman
 			
 		}
 		
@@ -344,8 +408,11 @@ MOBILE
 		
 		.work {
 			
-			&.printemps, &.kraken {
+			&.printemps, &.kraken, &.LTKD, &.boneman {
 				width: 100%;
+			}
+			&.printemps {
+				height:450px;
 			}
 		}
 
