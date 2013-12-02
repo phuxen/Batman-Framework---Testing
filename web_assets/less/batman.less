@@ -7,9 +7,10 @@
 @import "../fonts/roboto_bold_macroman/stylesheet.css";
 
 .scene {
-  max-width: 500px;
-  margin: 0 auto;
-  padding: 0;
+	//max-width: 320px;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
 }
 
 .layer:nth-child(1) {
@@ -433,7 +434,9 @@ MOBILE
 		}
 		
 		.work {
-			
+			&.burberryWorld {
+				height:480px - 44px;
+			}
 			&.printemps, &.kraken, &.LTKD, &.boneman {
 				width: 100%;
 			}
