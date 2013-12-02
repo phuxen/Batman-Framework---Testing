@@ -90,7 +90,7 @@ body	{
 	}
 	
 	.mainContent {
-		width: @siteWidthFull;
+		width: @siteWidthWide;
 		padding: 0 0 0;
 		margin: 0 auto;
 		//border-right: 1px solid #f00;
@@ -380,6 +380,22 @@ body	{
 			padding: 15px 15px 0;
 		}
 		
+/* =========================================================================================
+
+TABLET
+
+========================================================================================= */
+@media screen and (min-device-width: 1025px) and (max-width: 1380px) {
+	.mainContent {
+		width:@siteWidthFull;
+	}
+	.carousel {
+		height: 500px;
+	}
+	
+		
+}
+
 /* =========================================================================================
 
 TABLET
