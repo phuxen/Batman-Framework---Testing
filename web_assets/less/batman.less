@@ -6,31 +6,7 @@
 @import "../fonts/roboto_regular_macroman/stylesheet.css";
 @import "../fonts/roboto_bold_macroman/stylesheet.css";
 
-.scene {
-	//max-width: 320px;
-	margin: 0 auto;
-	padding: 0;
-	overflow: hidden;
-}
 
-.layer:nth-child(1) {
-  opacity: 1;
-}
-.layer:nth-child(2) {
-  opacity: 0.30;
-}
-.layer:nth-child(3) {
-  opacity: 0.45;
-}
-.layer:nth-child(4) {
-  opacity: 0.60;
-}
-.layer:nth-child(5) {
-  opacity: 0.75;
-}
-.layer:nth-child(6) {
-  opacity: 0.90;
-}
 
 
 /* =========================================================================================
@@ -101,14 +77,6 @@ body	{
 		//background: #fff;
 		height: inherit;
 	}
-		.carousel {
-			//background: #e9e9e9;
-			background: url('../img/HeroBW_c.png');
-			background-size: cover;
-			height: 600px;
-			width:100%;
-			//padding: 72px 0 0;
-		}
 
 		@workTall:	700px;
 		@workMed:	400px;
@@ -157,11 +125,36 @@ body	{
 				height:@workTall;
 				position: relative;
 				width: 100%;
+				overflow: hidden;
 				.phone {
 					//background: rgba (0,0,0,0.5;);
 					//height: 200px;
 					//width: 120px;
 				}
+				#scene {
+					//margin: 0 auto;
+					padding: 200px 0 0;
+					overflow: hidden;
+					height: 150%;
+					width: 150%;
+					position: absolute;
+					top: -150px;
+					left: -150px;
+					.layer {
+						&.cover {
+							background: url('../img/work/BW_0.3_Cover.png');
+							background-size: cover;
+							background-position: center center;
+						}
+					}
+					.layer:nth-child(1) {
+					  opacity: 1;
+					}
+					.layer:nth-child(2) {
+					  opacity: 0.30; 
+					}
+				}
+				
 			}
 			// end Burberry World
 			
