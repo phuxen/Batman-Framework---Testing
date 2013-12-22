@@ -1,1 +1,785 @@
-@import "../fonts/roboto_light_macroman/stylesheet.css";@import "../fonts/roboto_regular_macroman/stylesheet.css";@import "../fonts/roboto_bold_macroman/stylesheet.css";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}.noSelect{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.displayNone{display:none!important}.clear{clear:both;float:none}.clear:after{clear:both;content:".";display:block;height:0;visibility:hidden}@font-face{font-family:'Pictos';src:url('../icons/pictos-web.eot');src:local('☺'),url('../icons/pictos-web.woff') format('woff'),url('../icons/pictos-web.ttf') format('truetype'),url('../icons/pictos-web.svg#webfontphKv1xv9') format('svg');font-weight:normal;font-style:normal}.pictos{font-family:"Pictos";font-weight:normal;line-height:0;text-shadow:none}h1,h2,h3,h4,h5{font-weight:normal}h1{color:#1b1b1b;font-family:"robotolight",Helvetica,Arial,sans-serif;font-size:48px;line-height:1.2;margin-bottom:15px}h1.homeHeader{font-size:3em;text-align:center}h1 em{text-transform:none;color:#5a5a5a}h2{color:#1b1b1b;font-family:"robotolight",Helvetica,Arial,sans-serif;font-size:36px;line-height:1.2;margin-bottom:15px}h2 em{text-transform:none;color:#5a5a5a}h3{color:#1b1b1b;font-family:"robotolight",Helvetica,Arial,sans-serif;font-size:30px;line-height:1.2;margin-bottom:5px}h3 em{text-transform:none;color:#5a5a5a}h4{color:#1b1b1b;font-family:"robotolight",Helvetica,Arial,sans-serif;font-size:22px;line-height:1.2;margin-bottom:10px}h4 em{text-transform:none;color:#5a5a5a}h5{color:#1b1b1b;font-family:"robotoregular",Helvetica,Arial,sans-serif;font-size:20px;margin-bottom:10px}h5 em{text-transform:none;color:#5a5a5a}p,address{margin-bottom:15px;font-size:1em}em{font-style:italic;font-weight:normal;font-family:Constantia,"Lucida Bright",Lucidabright,"Lucida Serif",Lucida,"DejaVu Serif","Bitstream Vera Serif","Liberation Serif",Georgia,serif}strong{font-weight:normal;font-family:"robotobold",Helvetica,Arial,sans-serif}a{color:#3da084;text-decoration:none;-webkit-transition:.1s linear all;-moz-transition:.1s linear all;-ms-transition:.1s linear all;-o-transition:.1s linear all;transition:.1s linear all}a:hover{color:#2f7b66;cursor:pointer}.superscript{vertical-align:super;font-size:70%}.subscript{vertical-align:bottom;font-size:70%}::selection{background:#3da084;color:#fff}::-moz-selection{background:#3da084;color:#fff}html,html a{-webkit-font-smoothing:antialiased}body{color:#5a5a5a;font-size:18px;font-family:"robotoregular",Helvetica,Arial,sans-serif;font-weight:300;line-height:1.6;background:#f5f5f5}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.wrapper{margin:0 auto;height:inherit}.nav{-webkit-box-shadow:0 3px 10px -4px rgba(0,0,0,0.25);-moz-box-shadow:0 3px 10px -4px rgba(0,0,0,0.25);box-shadow:0 3px 10px -4px rgba(0,0,0,0.25);background:rgba(245,245,245,0.97);position:fixed;height:52px;width:100%;text-align:center;padding:6px 0 0;z-index:99}.nav span{color:#3a3a3a;font-size:26px;display:block}.mainContent{width:1280px;padding:0;margin:0 auto;height:inherit}.work{-webkit-transition:.2s;-moz-transition:.2s;-ms-transition:.2s;-o-transition:.2s;transition:.2s;float:left;display:block;overflow:hidden}.work .title{-webkit-box-shadow:0 -3px 10px rgba(0,0,0,0.25);-moz-box-shadow:0 -3px 10px rgba(0,0,0,0.25);box-shadow:0 -3px 10px rgba(0,0,0,0.25);position:absolute;bottom:0;padding:12px 15px;background:rgba(255,255,255,0.9);width:100%}.work .title h2{margin:0}.work .title h3{margin:0;color:#5a5a5a;font-family:"robotoregular",Helvetica,Arial,sans-serif;font-size:20px}.work .title h5{margin:0;color:#999;font-family:"robotoregular",Helvetica,Arial,sans-serif;font-size:20px}.work.burberryWorld{background:url('../img/work/BW_0.1_Background.jpg');background-size:cover;background-position:center center;height:700px;position:relative;width:100%;overflow:hidden}.work.burberryWorld #scene{padding:200px 0 0;overflow:hidden;height:150%;width:150%;position:absolute;top:-150px;left:-150px}.work.burberryWorld #scene .layer.cover{background:url('../img/work/BW_0.3_Cover.png');background-size:cover;background-position:center center}.work.burberryWorld #scene .layer:nth-child(1){opacity:1}.work.burberryWorld #scene .layer:nth-child(2){opacity:.30}.work.printemps{background:url(../img/printemps/grid.png);background-size:auto;background-position:center center;height:400px;position:relative;width:50%}.work.kraken{background:#53bd9f;background-size:cover;background-position:center center;height:400px;position:relative;width:50%}.work.LTKD{background:#c43c35;background-size:cover;background-position:center center;height:300px;position:relative;width:60%}.work.boneman{background:#7a43b6;background-size:cover;background-position:center center;height:300px;position:relative;width:40%}.work.mrsite{background:#26c1bd;background-size:cover;background-position:center center;height:300px;position:relative;width:60%}.work.mrsite2{background:#7bf8d6;background-size:cover;background-position:center center;height:300px;position:relative;width:40%}.aboutWrapper{float:left;position:relative}.selfie{width:25%;position:absolute;left:0;bottom:0;top:0;background:url('../img/passport.jpg');background-size:cover;background-position:center}.about{width:75%;float:right;padding:20px}.social{height:44px;width:25%;float:left;padding:8px 0 0;text-align:center;-webkit-transition:.4s linear all;-moz-transition:.4s linear all;-ms-transition:.4s linear all;-o-transition:.4s linear all;transition:.4s linear all}.social.twitter{background:#00aaef;color:#f5f5f5}.social.twitter:hover{opacity:.8}.social.linkedin{background:#14779d;color:#f5f5f5}.social.linkedin:hover{opacity:.8}.social.github{background:#1b1b1b;color:#f5f5f5}.social.github:hover{opacity:.8}.social.soundcloud{background:#ffa600;background:-moz-linear-gradient(top,#ffa600 0,#ff8100 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#ffa600),color-stop(100%,#ff8100));background:-webkit-linear-gradient(top,#ffa600 0,#ff8100 100%);background:-o-linear-gradient(top,#ffa600 0,#ff8100 100%);background:-ms-linear-gradient(top,#ffa600 0,#ff8100 100%);background:linear-gradient(to bottom,#ffa600 0,#ff8100 100%);filter:progid:dximagetransform.microsoft.gradient(startColorstr='#ffa600',endColorstr='#ff8100',GradientType=0);color:#3a3a3a}.social.soundcloud:hover{opacity:.8}.footer{width:100%;float:left;padding:15px 15px 0}@media screen and (min-device-width:1025px) and (max-width:1380px){.mainContent{width:1024px}}@media screen and (min-device-width:720px) and (max-width:1024px){.mainContent{width:100%}}@media screen and (max-width:719px){.nav{height:44px;padding:7px 0 0}.nav span{font-size:20px}.mainContent{padding:44px 0 0}.work .title{padding:12px 15px;text-align:center}.work .title h2{font-size:28px}.work .title h3,.work .title h5{font-size:18px}.work.burberryWorld{height:436px}.work.printemps,.work.kraken,.work.LTKD,.work.boneman,.work.mrsite,.work.mrsite2{width:100%}.work.printemps{height:450px}.aboutWrapper{width:100%}.aboutWrapper .selfie{position:relative;width:100%;height:300px}.aboutWrapper .about{width:100%;border-bottom:2px solid #e9e9e9}.social{width:50%;background:none!important}.social.twitter,.social.linkedin,.social.github,.social.soundcloud{color:#3da084}}
+@import "../fonts/roboto_light_macroman/stylesheet.css";
+
+@import "../fonts/roboto_regular_macroman/stylesheet.css";
+
+@import "../fonts/roboto_bold_macroman/stylesheet.css";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* -----------------------------------------------------------------------------------------
+
+COLOURS
+
+----------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------------------
+
+WIDTHS & HEIGHTS
+
+----------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------------------------------------
+
+TYPOGRAPHY
+
+----------------------------------------------------------------------------------------- */
+/*#3a546f;*/
+/*#00142a; 29343f*/
+/* -----------------------------------------------------------------------------------------
+
+Useful classes
+
+----------------------------------------------------------------------------------------- */
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.displayNone {
+  display: none!important;
+}
+.clear {
+  clear: both;
+  float: none;
+}
+.clear:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/* =========================================================================================
+
+TYPOGRAPHY
+
+========================================================================================= */
+@font-face {
+  font-family: 'Pictos';
+  src: url('../icons/pictos-web.eot');
+  src: local('☺'), url('../icons/pictos-web.woff') format('woff'), url('../icons/pictos-web.ttf') format('truetype'), url('../icons/pictos-web.svg#webfontphKv1xv9') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.pictos {
+  font-family: "Pictos";
+  font-weight: normal;
+  line-height: 0;
+  text-shadow: none;
+}
+/* -------------------------------------------------------
+Headers
+------------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+h1 {
+  color: #1b1b1b;
+  font-family: "robotolight", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+h1.homeHeader {
+  font-size: 3em;
+  text-align: center;
+}
+h1 em {
+  text-transform: none;
+  color: #5a5a5a;
+}
+h2 {
+  color: #1b1b1b;
+  font-family: "robotolight", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+h2 em {
+  text-transform: none;
+  color: #5a5a5a;
+}
+h3 {
+  color: #1b1b1b;
+  font-family: "robotolight", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+h3 em {
+  text-transform: none;
+  color: #5a5a5a;
+}
+h4 {
+  color: #1b1b1b;
+  font-family: "robotolight", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+h4 em {
+  text-transform: none;
+  color: #5a5a5a;
+}
+h5 {
+  color: #1b1b1b;
+  font-family: "robotoregular", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+h5 em {
+  text-transform: none;
+  color: #5a5a5a;
+}
+p,
+address {
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+em {
+  font-style: italic;
+  font-weight: normal;
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+strong {
+  font-weight: normal;
+  font-family: "robotobold", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #26c1bd;
+  text-decoration: none;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  -ms-transition: 0.1s linear all;
+  -o-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+}
+a:hover {
+  color: #1e9693;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.superscript {
+  vertical-align: super;
+  font-size: 70%;
+}
+.subscript {
+  vertical-align: bottom;
+  font-size: 70%;
+}
+::selection {
+  background: #26c1bd;
+  color: #ffffff;
+}
+::-moz-selection {
+  background: #26c1bd;
+  color: #ffffff;
+}
+/* =========================================================================================
+
+GLOBAL
+
+========================================================================================= */
+html,
+html a {
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  color: #5a5a5a;
+  font-size: 18px;
+  font-family: "robotoregular", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  background: #f5f5f5;
+}
+* {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+
+}
+.wrapper {
+  margin: 0 auto;
+  height: inherit;
+}
+.nav {
+  -webkit-box-shadow: 0 3px 10px -4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 3px 10px -4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 10px -4px rgba(0, 0, 0, 0.25);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: default;
+  background: rgba(245, 245, 245, 0.97);
+  position: fixed;
+  height: 52px;
+  width: 100%;
+  font-family: "robotolight", Helvetica, Arial, sans-serif;
+  padding: 6px 0 0;
+  z-index: 99;
+}
+.navInner {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.navInner .mainTitle {
+  color: #3a3a3a;
+  font-family: "robotolight", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  display: block;
+  float: left;
+}
+.navInner .mainTitle strong {
+  font-family: "robotoregular", Helvetica, Arial, sans-serif;
+}
+.navInner .socialLinks {
+  list-style: none;
+  float: right;
+}
+.navInner .socialLinks li {
+  float: left;
+  padding: 5px 0 0 15px;
+}
+.mainContent {
+  width: 1280px;
+  padding: 0 0 0;
+  margin: 0 auto;
+  height: inherit;
+}
+.work {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  float: left;
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  /* =========================================================================================
+
+			Slider
+			
+			========================================================================================= */
+}
+.work .title {
+  -webkit-box-shadow: 0 -3px 10px rgba(50, 50, 50, 0.05);
+  -moz-box-shadow: 0 -3px 10px rgba(50, 50, 50, 0.05);
+  box-shadow: 0 -3px 10px rgba(50, 50, 50, 0.05);
+  position: absolute;
+  bottom: 0;
+  padding: 12px 15px;
+  background: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  z-index: 10;
+}
+.work .title h2 {
+  margin: 0;
+}
+.work .title h3 {
+  margin: 0;
+  color: #5a5a5a;
+  font-family: "robotoregular", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+.work .title h5 {
+  margin: 0;
+  color: #999;
+  font-family: "robotoregular", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+}
+.work.burberryWorld {
+  background: #ddd;
+  height: 700px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.work #iosslider-BW {
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.work #iosslider-BW .slider {
+  width: 100%;
+  height: 100%;
+}
+.work #iosslider-BW .slider .slide {
+  float: left;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+.work #iosslider-BW .slider .slide.one {
+  background-image: url('../img/_heros/Hero_700-BurberryWorld-B.jpg');
+}
+.work #iosslider-BW .slider .slide.two {
+  background-image: url('../img/_heros/Hero_700-BurberryWorld-C.jpg');
+}
+.work #iosslider-BW .slider .slide.three {
+  background-image: url('../img/_heros/Hero_700-BurberryWorld-D.jpg');
+}
+.work #iosslider-BW .slider .slide.four {
+  background-image: url('../img/_heros/Hero_700-BurberryWorld-A.jpg');
+}
+.work #iosslider-BW .prevButton-BW {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-size: 70px;
+  font-family: "robotolight", Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 260px;
+  left: 0;
+  padding: 10px 0 10px 15px;
+  z-index: 2;
+  opacity: 0.3;
+}
+.work #iosslider-BW .prevButton-BW:hover {
+  opacity: 1;
+}
+.work #iosslider-BW .nextButton-BW {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-size: 70px;
+  font-family: "robotolight", Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 260px;
+  right: 0;
+  padding: 10px 15px 10px 0;
+  z-index: 2;
+  opacity: 0.3;
+}
+.work #iosslider-BW .nextButton-BW:hover {
+  opacity: 1;
+}
+.work.printemps {
+  background-image: url(../img/printemps/grid.png);
+  background-size: auto;
+  background-position: center center;
+  height: 400px;
+  position: relative;
+  width: 50%;
+}
+.work.kraken {
+  background-color: #e9e9e9;
+  background-image: url('../img/_heros/Hero_400-Kraken.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 400px;
+  position: relative;
+  width: 50%;
+}
+.work.LTKD {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background-color: #e9e9e9;
+  width: 55%;
+}
+.work #iosslider-LTKD {
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.work #iosslider-LTKD .slider {
+  width: 100%;
+  height: 100%;
+}
+.work #iosslider-LTKD .slider .slide {
+  float: left;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+.work #iosslider-LTKD .slider .slide.one {
+  background-image: url('../img/_heros/Hero_400-LTKD.jpg');
+}
+.work #iosslider-LTKD .slider .slide.two {
+  background-image: url('../img/_heros/Hero_400-LTKD-B.jpg');
+}
+.work #iosslider-LTKD .slider .slide.three {
+  background: #46a546;
+}
+.work #iosslider-LTKD .slider .slide.four {
+  background-image: url('../img/_heros/Hero_700-BurberryWorld-A.jpg');
+}
+.work #iosslider-LTKD .prevButton-LTKD {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-size: 70px;
+  font-family: "robotolight", Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  padding: 10px 0 10px 15px;
+  z-index: 2;
+  opacity: 0.3;
+}
+.work #iosslider-LTKD .prevButton-LTKD:hover {
+  opacity: 1;
+}
+.work #iosslider-LTKD .nextButton-LTKD {
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  font-size: 70px;
+  font-family: "robotolight", Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 120px;
+  right: 0;
+  padding: 10px 15px 10px 0;
+  z-index: 2;
+  opacity: 0.3;
+}
+.work #iosslider-LTKD .nextButton-LTKD:hover {
+  opacity: 1;
+}
+.work.quote {
+  background: #e9e9e9;
+}
+.work.boneman {
+  background: #7a43b6;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  position: relative;
+  width: 40%;
+}
+.work.mrsite {
+  background: #26c1bd;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  position: relative;
+  width: 60%;
+}
+.work.mrsite2 {
+  background: #7bf8d6;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  position: relative;
+  width: 40%;
+}
+/* ------------------------------------------------
+	
+	About
+	
+	------------------------------------------------ */.aboutWrapper {
+  float: left;
+  position: relative;
+}
+.about {
+  width: 45%;
+  float: right;
+  padding: 20px;
+}
+/* ------------------------------------------------
+	
+	Quote
+	
+	------------------------------------------------ */blockquote {
+  font-family: "robotolight", Helvetica, Arial, sans-serif;
+  font-size: 23px;
+  margin: 0;
+  padding: 50px;
+  position: relative;
+}
+blockquote cite {
+  font-family: "robotoregular", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  display: block;
+  margin-top: 5px;
+  margin: 20px 0 0;
+  text-align: left;
+}
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+.footer {
+  width: 100%;
+  float: left;
+  padding: 15px 15px 0;
+}
+/* =========================================================================================
+
+Desktop
+
+========================================================================================= */
+@media screen and (min-device-width: 1025px) and (max-width: 1380px) {
+  .mainContent,
+  .navInner {
+    width: 1024px;
+  }
+}
+/* =========================================================================================
+
+Tablet
+
+========================================================================================= */
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+  .mainContent,
+  .navInner {
+    width: 100%;
+  }
+}
+/* =========================================================================================
+
+Mobile
+
+========================================================================================= */
+@media screen and (max-width: 719px) {
+  .mainContent,
+  .navInner {
+    width: 100%;
+  }
+  .nav {
+    height: 44px;
+    padding: 7px 0 0;
+  }
+  .nav .mainTitle {
+    font-size: 20px;
+  }
+  .nav .socialLinks li {
+    padding: 2px 0 0 10px;
+  }
+  .nav .socialLinks li .github {
+    display: none;
+  }
+  .mainContent {
+    padding: 44px 0 0;
+  }
+  .work .title {
+    padding: 12px 15px;
+    text-align: center;
+  }
+  .work .title h2 {
+    font-size: 28px;
+  }
+  .work .title h3,
+  .work .title h5 {
+    font-size: 18px;
+  }
+  .work.burberryWorld {
+    height: 396px;
+  }
+  .work.printemps,
+  .work.kraken,
+  .work.LTKD,
+  .work.boneman,
+  .work.mrsite,
+  .work.mrsite2 {
+    width: 100%;
+  }
+  .work.printemps {
+    height: 450px;
+  }
+  .aboutWrapper {
+    width: 100%;
+  }
+  .aboutWrapper .selfie {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  .aboutWrapper .about {
+    width: 100%;
+  }
+  blockquote {
+    padding: 15px;
+  }
+}

@@ -6,9 +6,6 @@
 @import "../fonts/roboto_regular_macroman/stylesheet.css";
 @import "../fonts/roboto_bold_macroman/stylesheet.css";
 
-
-
-
 /* =========================================================================================
 
 GLOBAL
@@ -20,7 +17,6 @@ body, html {
 
 html, html a {
     -webkit-font-smoothing: antialiased;
-    //text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 }
 
 html	{
@@ -32,7 +28,6 @@ body	{
 	font-family:@bodyFamily; 
 	font-weight: 300;
 	line-height:1.6;
-	//background:url(../img/backgrounds/zwartevilt.png) top right repeat #1b1b1b;
 	background: #f5f5f5;  
 }
 
@@ -51,30 +46,44 @@ body	{
 	
 	.nav {
 		.boxShadow (0 3px 10px -4px rgba(0,0,0,0.25));
-		//background: #fff;
+		.noSelect;
+		cursor: default;
 		background: rgba(245,245,245,0.97);
-		//background: rgba(20,20,20,0.97);
 		position:fixed;
 		height:@navHeight;
 		width:100%;
-		text-align:center;
+		font-family: @headerFamily;
 		padding: 6px 0 0;
 		z-index: 99;
-		span {
-			color: #3a3a3a;
-			//color: #f5f5f5;
-			font-size: 26px;
-			display: block;
-		}
 	}
+		.navInner {
+			width: @siteWidthWide;
+			margin: 0 auto;
+			padding:0 15px;
+			.mainTitle {
+				color: #3a3a3a;
+				font-family: @headerFamily;
+				font-size: 26px;
+				display: block;
+				float: left;
+				strong {
+					font-family: @bodyFamily;
+				}
+			}
+			.socialLinks {
+				list-style: none;
+				float: right;
+				li {
+					float: left;
+					padding: 5px 0 0 15px;
+				}
+			}
+		}
 	
 	.mainContent {
 		width: @siteWidthWide;
 		padding: 0 0 0;
 		margin: 0 auto;
-		//border-right: 1px solid #f00;
-		//border-left: 1px solid #000;
-		//background: #fff;
 		height: inherit;
 	}
 
@@ -87,19 +96,20 @@ body	{
 			float:left;
 			display:block;
 			overflow: hidden;
+			padding: 0;
 			
 			&:hover {
 				//opacity: .9;	
 			}
 			
 			.title {
-				.boxShadow (0 -3px 10px rgba(0, 0, 0, 0.25));
+				.boxShadow (0 -3px 10px rgba(50, 50, 50, 0.05));
 				position:absolute;
 				bottom: 0;
 				padding: 12px 15px;
-				background: rgba(255,255,255,0.9);
-				//background: rgba(20,20,20,0.97);
+				background: rgba(255,255,255,0.95);
 				width: 100%;
+				z-index: 10;
 				h2 {
 					margin: 0;
 				}
@@ -119,47 +129,87 @@ body	{
 			// end Title
 			
 			&.burberryWorld {
-				background: url('../img/work/BW_0.1_Background.jpg');
-				background-size: cover;
-				background-position: center center;
+				background: #ddd;
 				height:@workTall;
 				position: relative;
 				width: 100%;
 				overflow: hidden;
-				.phone {
-					//background: rgba (0,0,0,0.5;);
-					//height: 200px;
-					//width: 120px;
-				}
-				#scene {
-					//margin: 0 auto;
-					padding: 200px 0 0;
-					overflow: hidden;
-					height: 150%;
-					width: 150%;
-					position: absolute;
-					top: -150px;
-					left: -150px;
-					.layer {
-						&.cover {
-							background: url('../img/work/BW_0.3_Cover.png');
-							background-size: cover;
-							background-position: center center;
+			}
+			
+			/* =========================================================================================
+
+			Slider
+			
+			========================================================================================= */		
+			#iosslider-BW {
+				position: relative;
+				top: 0;
+				left: 0;
+				overflow: hidden;
+				width: 100%;
+				height: 100%;			
+				.slider {
+					width: 100%;
+					height: 100%;
+					.slide {
+						float: left;
+						width: 100%;
+						height: 100%;
+						position:relative;
+						background-repeat: no-repeat;
+						background-size: contain;
+						background-position: center bottom;
+						&.one {
+							background-image: url('../img/_heros/Hero_700-BurberryWorld-B.jpg');
+						}
+						&.two {
+							background-image: url('../img/_heros/Hero_700-BurberryWorld-C.jpg');
+
+						}
+						&.three {
+							background-image: url('../img/_heros/Hero_700-BurberryWorld-D.jpg');	
+						}
+						&.four {
+							background-image: url('../img/_heros/Hero_700-BurberryWorld-A.jpg');	
 						}
 					}
-					.layer:nth-child(1) {
-					  opacity: 1;
-					}
-					.layer:nth-child(2) {
-					  opacity: 0.30; 
+				}
+				.prevButton-BW {
+					.transition(.2s);
+					.noSelect;
+					font-size: 70px;
+					font-family: @quoteFamily;
+					position: absolute;
+					top: 260px;
+					left: 0;
+					padding:10px 0 10px 15px;
+					z-index: 2;
+					opacity: 0.3;
+					&:hover {
+						opacity: 1;
 					}
 				}
-				
+				.nextButton-BW {
+					.transition(.2s);
+					.noSelect;
+					font-size: 70px;
+					font-family: @quoteFamily;
+					position: absolute;
+					top: 260px;
+					right: 0;
+					padding:10px 15px 10px 0;
+					z-index: 2;
+					opacity: 0.3;
+					&:hover {
+						opacity: 1;
+					}
+				}
 			}
+
 			// end Burberry World
 			
 			&.printemps {
-				background: url(../img/printemps/grid.png);
+				background-image: url(../img/printemps/grid.png);
 				background-size:auto;
 				background-position: center center;
 				height:@workMed;
@@ -169,8 +219,10 @@ body	{
 			// end Printemps
 			
 			&.kraken {
-				background: @kraken;
-				background-size: cover;
+				background-color: #e9e9e9;
+				background-image: url('../img/_heros/Hero_400-Kraken.jpg');
+				background-repeat: no-repeat;
+				background-size: contain;
 				background-position: center center;
 				height:@workMed;
 				position: relative;
@@ -179,14 +231,88 @@ body	{
 			// end Kraken
 			
 			&.LTKD {
-				background: @red;
-				background-size: cover;
-				background-position: center center;
-				height:@workSml;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				top: 0;
+				background-color: #e9e9e9;
+				width: 55%;
+			}
+			
+			/* =========================================================================================
+
+			Slider
+			
+			========================================================================================= */		
+			#iosslider-LTKD {
 				position: relative;
-				width: 60%;
+				top: 0;
+				left: 0;
+				overflow: hidden;
+				width: 100%;
+				height: 100%;			
+				.slider {
+					width: 100%;
+					height: 100%;
+					.slide {
+						float: left;
+						width: 100%;
+						height: 100%;
+						position:relative;
+						background-repeat: no-repeat;
+						background-size: contain;
+						background-position: center bottom;
+						&.one {
+							background-image: url('../img/_heros/Hero_400-LTKD.jpg');
+						}
+						&.two {
+							background-image: url('../img/_heros/Hero_400-LTKD-B.jpg');
+
+						}
+						&.three {
+							background:@green;	
+						}
+						&.four {
+							background-image: url('../img/_heros/Hero_700-BurberryWorld-A.jpg');	
+						}
+					}
+				}
+				.prevButton-LTKD {
+					.transition(.2s);
+					.noSelect;
+					font-size: 70px;
+					font-family: @quoteFamily;
+					position: absolute;
+					top: 120px;
+					left: 0;
+					padding:10px 0 10px 15px;
+					z-index: 2;
+					opacity: 0.3;
+					&:hover {
+						opacity: 1;
+					}
+				}
+				.nextButton-LTKD {
+					.transition(.2s);
+					.noSelect;
+					font-size: 70px;
+					font-family: @quoteFamily;
+					position: absolute;
+					top: 120px;
+					right: 0;
+					padding:10px 15px 10px 0;
+					z-index: 2;
+					opacity: 0.3;
+					&:hover {
+						opacity: 1;
+					}
+				}
 			}
 			// end LTKD
+			
+			&.quote {
+				background: #e9e9e9;
+			}
 			
 			&.boneman {
 				background: @purple;
@@ -232,71 +358,39 @@ body	{
 		position: relative;
 	}
 		.selfie {
-			width: 25%;
-			//background: #ddd;
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			top: 0;
-			background: url('../img/passport.jpg');
-			background-size: cover;
-			background-position: center;
+			
 		}
 		.about {
-			width: 75%;
+			width: 45%;
 			float: right;
-			//background: #1b1b1b;
-			//background: #e9e9e9;
 			padding: 20px;
 		}
-	
-	//
-	.social {
-		height: 44px;
-		width: 25%;
-		float: left;
-		padding: 8px 0 0;
-		text-align: center;
-		.transition(.4s linear all);
 		
-		&.twitter {
-			background: #00aaef;
-			color: #f5f5f5;
-			&:hover {
-				opacity: 0.8;
-			}
-		}
-		&.linkedin {
-			background: #14779d;
-			color: #f5f5f5;
-			&:hover {
-				opacity: 0.8;
-			}
-		}
-		&.github {
-			background: #1b1b1b;
-			color: #f5f5f5;
-			&:hover {
-				opacity: 0.8;
-			}
-		}
-		&.soundcloud {
-			background: #ffa600;
-			background: -moz-linear-gradient(top, #ffa600 0%, #ff8100 100%);
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa600), color-stop(100%,#ff8100));
-			background: -webkit-linear-gradient(top, #ffa600 0%,#ff8100 100%);
-			background: -o-linear-gradient(top, #ffa600 0%,#ff8100 100%);
-			background: -ms-linear-gradient(top, #ffa600 0%,#ff8100 100%);
-			background: linear-gradient(to bottom, #ffa600 0%,#ff8100 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa600', endColorstr='#ff8100',GradientType=0 );
-			color: #3a3a3a;
-			&:hover {
-				opacity: 0.8;
-			}
-		}
+	
+	/* ------------------------------------------------
+	
+	Quote
+	
+	------------------------------------------------ */	
+	
+	blockquote {
+		font-family: @quoteFamily;
+		font-size: @bodyFontSize + 5;
+		margin: 0;
+		padding: 50px;
+		position: relative;
 	}
-	
-	
+		blockquote cite {
+			font-family:@bodyFamily;
+			font-size: @bodyFontSize;
+			display: block;
+			margin-top: 5px;
+			margin:20px 0 0;
+			text-align:left;
+		}
+			blockquote cite:before {
+				content: "\2014 \2009";
+			}	
 	
 	
 	.footer {
@@ -304,6 +398,8 @@ body	{
 		float: left;
 		padding: 15px 15px 0;
 	}
+	
+
 		
 /* =========================================================================================
 
@@ -311,7 +407,7 @@ Desktop
 
 ========================================================================================= */
 @media screen and (min-device-width: 1025px) and (max-width: 1380px) {
-	.mainContent {
+	.mainContent, .navInner {
 		width:@siteWidthFull;
 	}
 }
@@ -321,8 +417,8 @@ Desktop
 Tablet
 
 ========================================================================================= */
-@media screen and (min-device-width: 720px) and (max-width: 1024px) {
-	.mainContent {
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+	.mainContent, .navInner {
 		width:100%;
 	}	
 }
@@ -333,11 +429,23 @@ Mobile
 
 ========================================================================================= */
 @media screen and (max-width: 719px) {
+	.mainContent, .navInner {
+		width:100%;
+	}
+	
 	.nav {
 		height: 44px;
 		padding:7px 0 0;
-		span {
+		.mainTitle {
 			font-size: 20px;
+		}
+		.socialLinks {
+			li {
+				padding:2px 0 0 10px;
+				.github {
+					display: none;
+				}
+			}
 		}
 	}
 	
@@ -356,7 +464,9 @@ Mobile
 				}
 			}
 			&.burberryWorld {
-				height:480px - 44px;
+				height:440px - 44px;
+				//background-image: url('../img/_heros/Hero_700-BurberryWorld-Mobile.jpg');
+				//background-position-y: -30px;
 			}
 			&.printemps, &.kraken, &.LTKD, &.boneman, &.mrsite, &.mrsite2 {
 				width: 100%;
@@ -372,27 +482,15 @@ Mobile
 				position: relative;
 				width:100%;
 				height:300px;
-				//background-position-y: -80px;
 			}
 			.about {
 				width:100%;
-				border-bottom: 2px solid #e9e9e9;
 			}
 		}
 		
-		.social {
-			width: 50%;
-			//height: 34px;
-			//padding: 0;	
-			background: none!important;
-			&.twitter,
-			&.linkedin,
-			&.github,
-			&.soundcloud {
-				color: @linkColor;
-			}
+		blockquote {
+			padding: 15px;
 		}
-
 }
 
 
